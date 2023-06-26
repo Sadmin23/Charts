@@ -1,5 +1,5 @@
 {
-  "name": "barchart",
+  "name": "barchart-2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,8 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@faker-js/faker": "^8.0.2"
   }
 }
