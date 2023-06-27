@@ -20,9 +20,19 @@ export default function App() {
   };
  
   return (
-    <div className="App">
-      <BarChart chartData={userData} />
-      <BarChart chartData={userData} />
-    </div>
+      <div>
+        <h1>First Run</h1>
+        <div className="App" style={{ display: 'flex', width: '100%' , justifyContent: 'center'}}>
+          <div style={{ flex: 1 }}>
+            <BarChart chartData={userData} title="Recall@10" />
+          </div>
+          <div style={{ flex: 1 }}>
+            <BarChart chartData={userData} title="Precision@10" />
+          </div>
+          <div style={{ flex: 1 }}>
+            <BarChart chartData={userData} title="NDCG@10" />
+          </div>
+        </div>
+      </div>
   );
-  }
+ }
