@@ -1,34 +1,29 @@
 import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js";
 import LineChart from "./LineChart";
-import { faker } from '@faker-js/faker';
+import { lines } from './Data'
 
 Chart.register(CategoryScale);
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
- 
+const labels = lines[0].data.map((data)=>data.name)
+
+const datasets = lines.map(value => { return {
+  label: value.title,
+  data: value.data.map(x=>x.val),
+  borderColor: value.color
+}})
+
 export default function App() {
 
   const chartData = {
     labels,
-    datasets: [
-      {
-        label: 'Dataset 1',
-        data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-        borderColor: 'rgb(255, 99, 132)',
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      },
-      {
-        label: 'Dataset 2',
-        data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-        borderColor: 'rgb(53, 162, 235)',
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
-      },
-    ],
+    datasets
   };
  
+  console.log(chartData);
+
   return (
-    <div className="App">
+    <div className="App" style={{width: '100%'}}>
       <LineChart chartData={chartData} />
     </div>
   );
