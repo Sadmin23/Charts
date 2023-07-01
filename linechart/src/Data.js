@@ -5,19 +5,19 @@
     data: [
       {
         name: "06/04", //x axis value
-        val: 4000, //y axis value
+        val: 3200, //y axis value
       },
       {
         name: "06/03",
-        val: 4000,
+        val: 2800,
       },
       {
         name: "06/02",
-        val: 2000,
+        val: 1500,
       },
       {
         name: "06/01",
-        val: 2780,
+        val: 2500,
       },
     ],
   },
@@ -31,7 +31,7 @@
       },
       {
         name: "06/03",
-        val: 3000,
+        val: 3500,
       },
       {
         name: "06/02",
@@ -39,7 +39,7 @@
       },
       {
         name: "06/01",
-        val: 2780,
+        val: 3200,
       },
     ] 
   },

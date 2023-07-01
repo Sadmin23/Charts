@@ -13,7 +13,24 @@ export const BarChart = ({ chartData, title }) => {
               text: ""
             },
             legend: {
-              display: false
+              display: false,
+              position: 'top'
+            }
+          },
+          scales: {
+            x: {
+              grid: {
+                display: false
+              },
+              ticks: {
+                  maxRotation: 90,
+                  minRotation: 90
+              }
+            },
+            y: {
+              grid: {
+                display: false
+              }
             }
           }
         }}

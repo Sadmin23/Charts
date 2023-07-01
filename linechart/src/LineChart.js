@@ -19,8 +19,11 @@ export default function LineChart({ chartData }) {
           },
           scales: {
             y: {
+              position: 'right',
+              beginAtZero: true,
               min: 0,
-              max: 5000
+              max: 6000,
+              display: false
             }
           }
         }}
