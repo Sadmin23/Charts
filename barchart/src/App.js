@@ -21,10 +21,13 @@ export default function App() {
  
   return (
       <div>
-        <h1 style={{paddingLeft: '100px'}}>First Run</h1>
-        <div className="App" style={{ display: 'flex', width: '100%' , justifyContent: 'center'}}>
-          <div style={{width: '25%'}}>
-            <BarChart chartData={userData} title="Recall@10" />
+        <h1 className="pl-10">First Run</h1>
+        <div className="flex justify-center">
+          <div className="w-1/4">
+            <BarChart chartData={userData} title="Recall@10" width={300} height={200}/>
+          </div>
+          <div className="w-1/4">
+            <BarChart chartData={userData} title="Precision@10" />
           </div>
         </div>
       </div>

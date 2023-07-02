@@ -15,6 +15,11 @@ export default function LineChart({ chartData }) {
               display: true
             }
           },
+          elements: {
+            point: {
+              radius: 0
+            }
+          },
           scales: {
             y: {
               position: 'right',
@@ -22,6 +27,9 @@ export default function LineChart({ chartData }) {
               display: true,
               grid : {
                 display: false
+              },
+              ticks: {
+                padding: 10
               },
               max: 5000
             },
@@ -39,7 +47,10 @@ export default function LineChart({ chartData }) {
               reverse: true,
               grid : {
                 display: false
-              }              
+              },
+              ticks: {
+                padding: 10
+              }           
             },
             x1: {
               position: 'top',

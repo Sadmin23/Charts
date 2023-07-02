@@ -10,7 +10,7 @@ const datasets = [
   {
     label: 'Top-list',
     data: [4200, 3300, 3000, 2800, 3000, 3500],
-    borderColor: 'pink'
+    borderColor: '#22C55E'
   },
   {
     label: 'Personalized',
@@ -27,7 +27,7 @@ const datasets = [
       x: '06/04',
       y: 2500
     }],
-    borderColor: 'orange'
+    borderColor: '#8B5CF6'
   },
   {
     label: 'Random',
@@ -44,7 +44,7 @@ const datasets = [
       x: '06/05',
       y: 2500
     }],
-    borderColor: 'red'
+    borderColor: '#b2beb5'
   }
 ]
 
@@ -58,8 +58,8 @@ export default function App() {
   console.log(chartData);
 
   return (
-    <div className="App" style={{ display: 'flex', width: '100%', justifyContent: 'center'}}>
-      <div style={{width: '50%'}}>
+    <div className="flex justify-center">
+      <div className="w-1/2">
         <LineChart chartData={chartData} />
       </div>
     </div>
