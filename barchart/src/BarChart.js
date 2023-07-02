@@ -15,20 +15,44 @@ export const BarChart = ({ chartData, title }) => {
             legend: {
               display: false,
               position: 'top'
-            }
+            },
           },
           scales: {
             x: {
               grid: {
-                display: false
+                display: false,
+                drawTicks: false
               },
               ticks: {
                   maxRotation: 90,
                   minRotation: 90
+              },
+              border: {
+                display: true
+              }
+            },
+            x1: {
+              position: 'top',
+              grid: {
+                display: false
+              },
+              ticks: {
+                display: false
               }
             },
             y: {
+              position: 'left',
               grid: {
+                display: false
+              },
+              max: 1
+            },
+            y1: {
+              position: 'right',
+              grid: {
+                display: false
+              },
+              ticks: {
                 display: false
               }
             }

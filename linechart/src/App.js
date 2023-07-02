@@ -23,7 +23,7 @@ export default function App() {
   console.log(chartData);
 
   return (
-    <div className="App" style={{  width: '800px', justifyContent: 'center'}}>
+    <div className="App" style={{  width: '800px', justifyContent: 'center', border: '1px solid black'}}>
       <LineChart chartData={chartData} />
     </div>
   );

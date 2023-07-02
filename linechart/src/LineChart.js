@@ -1,4 +1,3 @@
-import { scales } from "chart.js";
 import React from "react";
 import { Line } from "react-chartjs-2";
 
@@ -21,7 +20,6 @@ export default function LineChart({ chartData }) {
             y: {
               position: 'right',
               beginAtZero: true,
-              min: 0,
               max: 6000,
               display: false
             }

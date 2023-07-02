@@ -12,16 +12,16 @@ export default function App() {
     datasets: [
         {
           data: chartdata.data.map(data=>data.value),
-          // you can set indiviual colors for each bar
           backgroundColor: chartdata.data.map(data=>data.color),
           borderColor: "black",
+          barPercentage: 0.5
         }
     ]
   };
  
   return (
       <div>
-        <h1>First Run</h1>
+        <h1 style={{paddingLeft: '100px'}}>First Run</h1>
         <div className="App" style={{ display: 'flex', width: '100%' , justifyContent: 'center'}}>
           <div style={{width: '25%'}}>
             <BarChart chartData={userData} title="Recall@10" />
