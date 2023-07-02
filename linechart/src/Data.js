@@ -4,21 +4,25 @@
     color: "#8B5CF6",
     data: [
       {
-        name: "06/04", //x axis value
+        name: "06/01", //x axis value
         val: 3200, //y axis value
       },
       {
-        name: "06/03",
+        name: "06/02",
         val: 2800,
       },
       {
-        name: "06/02",
+        name: "06/03",
         val: 1500,
       },
       {
-        name: "06/01",
+        name: "06/04",
         val: 2500,
       },
+      {
+        name: "06/05",
+        val: 3500
+      }
     ],
   },
   { 
@@ -44,20 +48,3 @@
     ] 
   },
 ];
-
-/*
-const labels = lines[0].data.map((data)=>data.name)
-
-const datasets = lines.map(value => { return {
-  label: value.title,
-  data: value.data.map(x=>x.val),
-  borderColor: value.color
-}})
-
-const chartData = {
-  labels,
-  datasets
-};
-
-datasets.map(x=>console.log(x.data))
-*/

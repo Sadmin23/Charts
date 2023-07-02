@@ -10,7 +10,6 @@ export default function LineChart({ chartData }) {
           plugins: {
             title: {
               display: false,
-              text: "Users Gained between 2016-2020"
             },
             legend: {
               display: true
@@ -20,11 +19,36 @@ export default function LineChart({ chartData }) {
             y: {
               position: 'right',
               beginAtZero: true,
-              max: 6000,
-              display: true
+              display: true,
+              grid : {
+                display: false
+              },
+              max: 5000
+            },
+            y1: {
+              position: 'left',
+              grid: {
+                display: false
+              },
+              ticks: {
+                display: false
+              }
             },
             x: {
-              reverse: true
+              position: 'bottom',
+              reverse: true,
+              grid : {
+                display: false
+              }              
+            },
+            x1: {
+              position: 'top',
+              grid: {
+                display: false
+              },
+              ticks: {
+                display: false
+              }              
             }
           }
         }}

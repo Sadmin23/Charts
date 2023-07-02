@@ -1,18 +1,53 @@
 import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js";
 import LineChart from "./LineChart";
-import { lines } from './Data'
 
 Chart.register(CategoryScale);
 
 const labels = ['06/01', '06/02', '06/03', '06/04', '06/05', '06/06']
 
+const datasets = [
+  {
+    label: 'Top-list',
+    data: [4200, 3300, 3000, 2800, 3000, 3500],
+    borderColor: 'pink'
+  },
+  {
+    label: 'Personalized',
+    data: [{
+      x: '06/01',
+      y: 3200
+    }, {
+      x: '06/02',
+      y: 2800
+    }, {
+      x: '06/03',
+      y: 1500
+    }, {
+      x: '06/04',
+      y: 2500
+    }],
+    borderColor: 'orange'
+  },
+  {
+    label: 'Random',
+    data: [{
+      x: '06/02',
+      y: 3200
+    }, {
+      x: '06/03',
+      y: 2600
+    }, {
+      x: '06/04',
+      y: 1700
+    }, {
+      x: '06/05',
+      y: 2500
+    }],
+    borderColor: 'red'
+  }
+]
 
-const datasets = lines.map(value => { return {
-  label: value.title,
-  data: value.data.map(x=>x.val).reverse(),
-  borderColor: value.color
-}})
 export default function App() {
 
   const chartData = {
@@ -23,8 +58,10 @@ export default function App() {
   console.log(chartData);
 
   return (
-    <div className="App" style={{  width: '800px', justifyContent: 'center'}}>
-      <LineChart chartData={chartData} />
+    <div className="App" style={{ display: 'flex', width: '100%', justifyContent: 'center'}}>
+      <div style={{width: '50%'}}>
+        <LineChart chartData={chartData} />
+      </div>
     </div>
   );
 }
