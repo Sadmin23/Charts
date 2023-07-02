@@ -26,11 +26,11 @@ export default function App() {
           <div style={{width: '25%'}}>
             <BarChart chartData={userData} title="Recall@10" />
           </div>
-          <div style={{width: '25%'}}>
+          <div style={{width: '25%', height: '600px'}}>
             <BarChart chartData={userData} title="Precision@10" />
           </div>
           <div style={{width: '25%'}}>
-            <BarChart chartData={userData} title="NDCG@10" />
+            <BarChart chartData={userData} title="NDCG@10" width={200} height={400} />
           </div>
         </div>
       </div>
