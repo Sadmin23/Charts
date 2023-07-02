@@ -45,6 +45,9 @@ export const BarChart = ({ chartData, title, width, height }) => {
               grid: {
                 display: false
               },
+              ticks: {
+                padding: 10
+              },
               max: 1
             },
             y1: {

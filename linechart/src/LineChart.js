@@ -21,7 +21,10 @@ export default function LineChart({ chartData }) {
               position: 'right',
               beginAtZero: true,
               max: 6000,
-              display: false
+              display: true
+            },
+            x: {
+              reverse: true
             }
           }
         }}
