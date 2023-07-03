@@ -1,7 +1,7 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 
-export default function LineChart({ chartData }) {
+export default function LineChart({ chartData, maxData }) {
   return (
     <div className="chart-container">
       <Line
@@ -31,7 +31,7 @@ export default function LineChart({ chartData }) {
               ticks: {
                 padding: 10
               },
-              max: 5000
+              max: maxData ? maxData : 5000
             },
             y1: {
               position: 'left',

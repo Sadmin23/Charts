@@ -29,13 +29,16 @@ const App = () => {
 
   return (
     <div>
-      <h1 className="pl-10">First Run</h1>
+      <h1 className="text-3xl font-bold underline text-center py-10">Bar Chart</h1>
       <div className="flex justify-center">
         <div className="w-1/4">
-          <BarChart chartData={userData} title="Recall@10" width={200} height={200} />
+          <BarChart chartData={userData} title="Recall@10"/>
         </div>
         <div className="w-1/4">
           <BarChart chartData={userData} title="Precision@10" />
+        </div>
+        <div className="w-1/4">
+          <BarChart chartData={userData} title="NDCG@10" />
         </div>
       </div>
     </div>
