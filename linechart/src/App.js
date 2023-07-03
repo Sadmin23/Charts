@@ -59,7 +59,7 @@ export default function App() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold underline text-center py-10">LineChart</h1>
+      <h1 className="text-3xl font-bold underline text-center py-10">Line Chart</h1>
       <div className="flex justify-center">
         <div className="w-1/2">
           <LineChart chartData={chartData} maxData={7000} />
