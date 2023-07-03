@@ -26,5 +26,10 @@ $ npm run start
 ```
 
 ## Screenshots
+
 ### Barchart
+![Screenshot 2023-07-03 181339](https://github.com/Sadmin23/Charts/assets/86393032/3d06e4ab-e773-443b-85ff-61065cc7f217)
+
 ### LineChart
+![Screenshot 2023-07-03 181426](https://github.com/Sadmin23/Charts/assets/86393032/b2e9df66-7741-4e04-871e-b2605b3ec6c2)
+
