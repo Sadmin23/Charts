@@ -31,5 +31,6 @@ $ npm run start
 ![Screenshot 2023-07-03 181339](https://github.com/Sadmin23/Charts/assets/86393032/3d06e4ab-e773-443b-85ff-61065cc7f217)
 
 ### LineChart
-![Screenshot 2023-07-03 181426](https://github.com/Sadmin23/Charts/assets/86393032/b2e9df66-7741-4e04-871e-b2605b3ec6c2)
+![Screenshot 2023-07-03 182232](https://github.com/Sadmin23/Charts/assets/86393032/16e1ac59-95d5-4e6d-8c7f-3566dfee2169)
+
 
