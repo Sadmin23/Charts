@@ -28,9 +28,8 @@ $ npm run start
 ## Screenshots
 
 ### Barchart
-![Screenshot 2023-07-03 181339](https://github.com/Sadmin23/Charts/assets/86393032/3d06e4ab-e773-443b-85ff-61065cc7f217)
+![Screenshot 2023-07-03 181339](https://github.com/Sadmin23/Charts/assets/86393032/9f48b1f5-484a-4507-8492-7d836d7a611a)
 
 ### LineChart
-![Screenshot 2023-07-03 182232](https://github.com/Sadmin23/Charts/assets/86393032/16e1ac59-95d5-4e6d-8c7f-3566dfee2169)
 
-
+![Screenshot 2023-07-03 182232](https://github.com/Sadmin23/Charts/assets/86393032/5ad03b77-0d8d-4102-988b-b8008b011d35)
